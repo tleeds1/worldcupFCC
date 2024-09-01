@@ -149,3 +149,8 @@ psql -U postgres
 ./queries.sh
 ./queries.sh
 ./queries.sh
+psql -U postgres < worldcup.sql
+psql -U postgres < worldcup.sql
+pg_dump -cC --inserts -U freecodecamp worldcup > worldcup.sql
+git status
+git add .
